@@ -1,0 +1,70 @@
+%%{init: {"theme":"base","themeVariables":{"background":"#ffffff","primaryColor":"#ffffff","primaryTextColor":"#000000","primaryBorderColor":"#000000","lineColor":"#333333","clusterBkg":"#ffffff","clusterBorder":"#999999","edgeLabelBackground":"#ffffff","fontSize":"15px"}}}%%
+flowchart TB
+  subgraph B0["Block 0 開場：懂"]
+    C1["第1章 從員工到公司<br/>管理層才值錢、BOARD 框架"]
+    C2["第2章 三種會成交的對話<br/>Visibility／Control／Capacity"]
+  end
+  subgraph B1["Block 1 Build：先跑"]
+    C3["第3章 安裝與第一家公司<br/>預設沒有預算"]
+    C4["第4章 聘用第一批代理<br/>兩到三人、任務簡報"]
+  end
+  subgraph B2["Block 2 Organize：再排"]
+    C5["第5章 設計公司<br/>角色、目標鏈、Blueprint"]
+    C6["第6章 技能、連接器與記憶<br/>相依性登記表"]
+    C7["第7章 Hermes 與 OpenClaw<br/>adapter 狀態與成本回報"]
+  end
+  subgraph B3["Block 3 Authorize：再管（收費核心）"]
+    C8["第8章 預算與成本控制<br/>三層預算、暫停計畫"]
+    C9["第9章 治理與董事席<br/>核准、Board Charter"]
+    C10["第10章 品質關卡與信任<br/>評分表、失敗率"]
+  end
+  subgraph B4["Block 4 Run：再顧"]
+    C11["第11章 心跳與例行程序<br/>淨價值＝月費上限"]
+    C12["第12章 部署、更新與維護<br/>備份還原、交接文件"]
+  end
+  subgraph B5["Block 5 Deliver：最後賣"]
+    C13["第13章 包裝與定價<br/>四個方案、按範疇定價"]
+    C14["第14章 定位與十分鐘展示<br/>先秀出暫停"]
+    C15["第15章 交付與留住客戶<br/>第30天董事審查"]
+    C16["第16章 保持最新與說不<br/>結論 The Board Seat"]
+  end
+
+  C1 -->|遞進| C2
+  C1 -->|前提| C3
+  C3 -->|前提| C4
+  C4 -->|遞進：團隊變公司| C5
+  C5 -->|遞進| C6
+  C5 -->|前提：先有角色| C7
+  C5 -->|前提：具名真人| C9
+  C3 -.->|問題→解答：沒人問預算| C8
+  C7 -->|前提：成本回報| C8
+  C8 -->|遞進：暫停後誰決定| C9
+  C9 -->|遞進：核准不管品質| C10
+  C4 -.->|問題→解答：紀錄不證明品質| C10
+  C6 -->|支撐：最小權限| C10
+  C8 -->|支撐：心跳是成本放大器| C11
+  C10 -->|支撐：審查進例行程序| C11
+  C11 -->|遞進：節奏到維護| C12
+  C6 -->|支撐：審核日期| C12
+  C5 ==>|素材：Blueprint| C13
+  C11 -->|支撐：淨價值天花板| C13
+  C2 ==>|長弧：對話變定位| C14
+  C2 ==>|素材：方案對應對話| C13
+  C13 -->|遞進| C14
+  C4 ==>|素材：追溯任務| C14
+  C8 ==>|素材：預算暫停| C14
+  C9 ==>|素材：待審聘用| C14
+  C14 -->|遞進：簽約後| C15
+  C12 -->|支撐：交接文件| C15
+  C15 -->|遞進| C16
+  C7 -->|遞進：誠實說不| C16
+  C1 -.->|呼應：board| C16
+
+  classDef ch fill:#ffffff,stroke:#000000,color:#000000,stroke-width:1.5px;
+  class C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16 ch;
+  style B0 fill:#ffffff,stroke:#999999,color:#000000
+  style B1 fill:#ffffff,stroke:#999999,color:#000000
+  style B2 fill:#ffffff,stroke:#999999,color:#000000
+  style B3 fill:#ffffff,stroke:#999999,color:#000000
+  style B4 fill:#ffffff,stroke:#999999,color:#000000
+  style B5 fill:#ffffff,stroke:#999999,color:#000000
