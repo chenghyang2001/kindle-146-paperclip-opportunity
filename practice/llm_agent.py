@@ -69,7 +69,8 @@ def extract_json(text: str) -> dict:
         if start == -1 or end <= start:
             raise ValueError(f"回覆中找不到 JSON 物件：{text[:200]}")
         candidate = text[start : end + 1]
-    return json.loads(candidate)
+    # raw_decode 只解析第一個物件，JSON 後面若有多餘文字不會丟 Extra data
+    return json.JSONDecoder().raw_decode(candidate)[0]
 
 
 def ask_json(prompt: str) -> dict:
