@@ -17,8 +17,11 @@
 
 | 項目 | 結果 |
 | --- | --- |
-| Drive 語音／影片／簡報 | 待完成 |
-| Gmail | 待完成（VPS gws） |
-| LINE | 待完成 |
+| 完成時間 | 2026-11-28 02:37（finish.sh 結束碼 0，all_completed=true） |
+| Drive 語音（mp3，約 15.7 分） | https://drive.google.com/open?id=1xEMCS_LkaIpjm7jw3VYC2n1nFYRPGUBq |
+| Drive 影片（mp4，約 6.8 分） | https://drive.google.com/open?id=1tBnwiJhFRMLWW3qQnFttxhtAZTRcs5wk |
+| Drive 簡報 PDF／PPTX | https://drive.google.com/open?id=1_s9axuPnmhrD-vwF3sZbGc-L6bxkbi5Z／https://drive.google.com/open?id=12Q04JOXtiZMahyvK70DERlq71duof4SR |
+| Gmail | 已寄（VPS gws，message id 1a21e4cb056d4c22） |
+| LINE | 已送（Notify Server） |
 | WeChat | 無 |
-| 抽查 | 待完成 |
+| 抽查 | 簡報第 1 頁：大綱（六項）；影片開頭：片名標題卡，約 20 秒處才是六張編號大綱卡（【開場規定】未完全遵守） |
