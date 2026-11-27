@@ -1,0 +1,16 @@
+# Python／執行期
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.claude/
+practice/**/.claude/
+# 當機殘留
+*.stackdump
+core
+*.core
+*.dmp
+
+# 互動演練腳本執行時產生的輸出（每台電腦各自一份，不進版控）
+practice/ch[0-9]*/interactive/
